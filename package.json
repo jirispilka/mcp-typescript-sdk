@@ -18,6 +18,11 @@
     "modelcontextprotocol",
     "mcp"
   ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "exports": {
     "./*": {
       "import": "./dist/esm/*",
@@ -40,7 +45,8 @@
     "test": "jest",
     "start": "npm run server",
     "server": "tsx watch --clear-screen=false src/cli.ts server",
-    "client": "tsx src/cli.ts client"
+    "client": "tsx src/cli.ts client",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "content-type": "^1.0.5",
